@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+</head>
+<body>
+    <span>
+        This is an usual text, but 
+    </span>
+    <span class="hintObj" hint="Not usual">
+         this 
+    </span>
+    <span>
+         is not.
+    </span>
+
+    <script>
+        $(function(){
+            hintObj = $(".hintObj");
+            hintText = hintObj.attr("hint");
+            hint = $("<span>").attr("style", "position:absolute; background:white; border:2px solid black; margin-top:10px; margin-left:5px;").text(hintText);
+            hintObj.append(hint);
+            hint.hide();
+            hintObj.mouseenter(function(){
+                hint.show();
+            });
+            hintObj.mouseleave(function(){
+                hint.hide();
+            });
+        })
+    </script>
+</body>
+</html>
