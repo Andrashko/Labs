@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="Authentication">
+        <form class="container-fluid" action="">
+            <div class="row center upperButtons">
+                <input class="col signUpButton" type="button" value="Sign Up">
+                <input onClick="location.href='login.html'" class="col logInButton" type="button" value="Log in">
+            </div>
+
+            <div class="row center welcomeText">
+                <label class="col">Sign Up for Free</label>
+            </div>
+
+            <div class="row center nameInputData">
+                    <input class="col-6" type="text" name="fname" id="fn" placeholder="First Name*">
+                    <input class="col-6" type="text" name="lname" id="ln" placeholder="Last Name*">
+            </div>
+
+            <div class="row center inputData">
+                    <input class="col-12" type="text" name="email" id="email" placeholder="Email Address*">
+                    <input class="col-12" type="password" name="password" id="pswd" placeholder="Set A Password*">
+            </div>
+
+            <div class="row logIn">
+                <input class="col-12" id="registration" type="button" value="GET STARTED">
+            </div>
+            
+        </form>
+        <script>
+            let inputs = [$("#fn"), $("#ln"), $("#email"), $("#pswd")];
+
+            $("#registration").click(function(){
+                inputs.forEach(element => {
+                    if (element.val()=="") {
+                        element.css("border", "1px solid red");
+                    } else {
+                        element.css("border", "1px solid green");
+                    }
+                    
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

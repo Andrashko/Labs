@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+input{
+    color: rgb(161, 159, 159);
+}
+
+.Authentication {
+    width:500px;
+    background: rgb(34, 48, 61);
+    padding: 2px;
+    margin:2px;
+    border-radius: 5px;
+}
+
+
+.upperButtons{
+    margin: 20px;
+    margin-bottom:0px;
+}
+
+.upperButtons .logInButton{
+    background:  rgb(67, 104, 97);
+}
+
+.upperButtons input {
+    font-size: 75%;
+    height: 35px;
+    color: white;
+    background: rgb(13, 160, 134);
+    border: 0px;
+}
+
+.welcomeText{
+    text-align: center;
+    color: white;
+}
+
+.nameInputData{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.nameInputData input{
+    border: 1px solid gray;
+    background:rgb(34, 48, 61);
+}
+
+.inputData{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: gray;
+}
+
+.inputData input{
+    margin-bottom:20px;
+    border: 1px solid gray;
+    background:rgb(34, 48, 61);
+}
+
+
+.logIn{
+    height:50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.logIn input{
+    bottom: 15px;
+    color: white;
+    background: rgb(13, 160, 134);
+    border: 0px;
+}

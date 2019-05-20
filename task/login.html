@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    
+
+</head>
+<body>
+    <div class="Authentication">
+        <form class="container-fluid" action="">
+            <div class="row center upperButtons">
+                <input onClick="location.href='index.html'" class="col signUpButton" type="button" value="Sign Up">
+                <input class="col logInButton" type="button" value="Log in">
+            </div>
+
+            <div class="row center welcomeText">
+                <label class="col">Welcome Back!</label>
+            </div>
+
+            <div class="row center inputData">
+                    <input id="text" class="col-12" type="text" name="email"  placeholder="Email Address*">
+                    <input id ="pswd" class="col-12" type="password" name="password" placeholder="Set A Password*">
+            </div>
+
+            <div class="row">
+                    <label class="col-12 forgotPswd">Forgot Password?</label>
+            </div>
+            <div class="row logIn">
+                <input class="col-12" id="login" type="button" value="LOG IN">
+            </div>
+            
+        </form>
+        <script>
+                $("#login").click(function() {
+                    
+                    if($("#text").val()=="m@gmail.com" && $("#pswd").val()=="password")
+                        alert("ready!");
+                    else
+                        alert("Invalid data!");
+                });
+            </script>
+    </div>
+</body>
+</html>
